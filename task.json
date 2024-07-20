@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "build",
+        "type": "shell",
+        "command": "cl.exe",
+        "args": [
+            "/EHsc",
+            "min-cash-source-file.cpp",
+            "/Fe:",
+            "output-output-file.exe"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        },
+        "problemMatcher": ["$msCompile"]
+    }]
+}
